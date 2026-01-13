@@ -1,2 +1,2 @@
 # archfictrac
-fictrac install man for arch system
+Execute archfictrac.sh
