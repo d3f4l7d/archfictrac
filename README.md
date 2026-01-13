@@ -1,2 +1,2 @@
 # archfictrac
-Execute archfictrac.sh
+Execute fictracinstall.sh
