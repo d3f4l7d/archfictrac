@@ -13,9 +13,9 @@ git clone https://github.com/rjdmoore/fictrac.git ~/.config/fictrac
 mkdir ~/.config/fictrac/build
 cd ~/.config/fictrac/build
 cmake ..
-wget -O ~/.config/fictrac/include/SocketRecorder.h https://github.com/d3f4l7d/archfictrac/SocketRecorder.h
-wget -O ~/.config/fictrac/src/SocketRecorder.cpp https://github.com/d3f4l7d/archfictrac/SocketRecorder.cpp
-wget -O ~/.config/fictrac/src/SerialRecorder.cpp https://github.com/d3f4l7d/archfictrac/SerialRecorder.cpp
+cp ~/.config/d3f4l7d/archfictrac/SocketRecorder.h ~/.config/fictrac/include/SocketRecorder.h
+cp ~/.config/d3f4l7d/archfictrac/SocketRecorder.cpp ~/.config/fictrac/src/SocketRecorder.cpp
+cp ~/.config/d3f4l7d/archfictrac/SerialRecorder.cpp ~/.config/fictrac/src/SerialRecorder.cpp
 cmake --build . --config Release --parallel $(nproc) --clean-first
 
 echo "autoinstall of fictrac --DONE"
