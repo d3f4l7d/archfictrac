@@ -1,2 +1,4 @@
-# fictrac autoinstall script for Arch Linux system
+# Installation
 Execute fictracinstall.sh
+# FicTrac man
+1. 
