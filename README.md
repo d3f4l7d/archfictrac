@@ -6,6 +6,7 @@ Execute fictracinstall.sh
 3. ../bin/configGui config.txt
 4. ../bin/fictrac config.txt
 
+
 (One example of config.txt which makes ../bin/configGui and ../bin/fictrac work)
 
 0. FicTrac v2.1.2 config file (build date Nov  5 2025)
