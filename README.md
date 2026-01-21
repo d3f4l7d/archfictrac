@@ -7,7 +7,7 @@ Execute fictracinstall.sh
 4. ../bin/fictrac config.txt
 
 (One example of config.txt which makes ../bin/configGui and ../bin/fictrac work)
-## FicTrac v2.1.2 config file (build date Nov  5 2025)
+FicTrac v2.1.2 config file (build date Nov  5 2025)
 c2a_cnrs_yz      : { 720, 520, 720, 520 }
 c2a_r            : { 1.084020, -1.083270, -1.285857 }
 c2a_src          : c2a_cnrs_yz
