@@ -1,5 +1,8 @@
 # Installation
-Execute fictracinstall.sh
+Execute
+```
+./fictracinstall.sh
+```
 # FicTrac man
 1. mkdir ~/.config/fictrac/track
 2. sudo vim ~/.config/fictrac/track/config.txt (go to the example below)
