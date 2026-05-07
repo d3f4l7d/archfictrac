@@ -37,3 +37,7 @@ Execute like the below.
 22. thr_win_pc       : 0.25
 23. vfov             : 45
 24. vid_codec        : h264
+
+MIT License
+
+Copyright (c) 2026 d3f4l7d
