@@ -9,6 +9,10 @@ echo
 sudo pacman -Syu
 
 if [ ! -d "~/.config/fictrac/build" ]; then
+    echo
+    
+    echo
+    
     sudo pacman -S gcc cmake ffmpeg nlopt boost qt6 vtk hdf5 opencv
     git clone https://github.com/rjdmoore/fictrac.git ~/.config/fictrac
     mkdir ~/.config/fictrac/build
@@ -20,5 +24,5 @@ if [ ! -d "~/.config/fictrac/build" ]; then
     cmake --build . --config Release --parallel $(nproc) --clean-first
     echo "autoinstall of fictrac --DONE"
 else
-    echo ""
+    echo "FicTrac is already installed. Skip FT process..."
 fi
