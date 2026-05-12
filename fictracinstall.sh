@@ -10,7 +10,11 @@ sudo pacman -Syu
 
 if [ ! -d "~/.config/fictrac/build" ]; then
     echo
-    
+    echo " _____ _____ "
+    echo "|  ___|_   _|"
+    echo "| |_    | |  "
+    echo "|  _|   | |  "
+    echo "|_|     |_|  "
     echo
     
     sudo pacman -S gcc cmake ffmpeg nlopt boost qt6 vtk hdf5 opencv
