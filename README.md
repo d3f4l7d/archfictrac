@@ -1,9 +1,9 @@
-# Installation
+## Installation
 Execute like the below.
 ```
 ./fictracinstall.sh
 ```
-# FicTrac man
+## FicTrac man
 1. mkdir ~/.config/fictrac/track
 2. sudo vim ~/.config/fictrac/track/config.txt (go to the example below)
 3. ../bin/configGui config.txt
@@ -38,6 +38,5 @@ Execute like the below.
 23. vfov             : 45
 24. vid_codec        : h264
 
-MIT License
-
-Copyright (c) 2026 d3f4l7d
+## License
+MIT License - see LICENSE file for more details.
