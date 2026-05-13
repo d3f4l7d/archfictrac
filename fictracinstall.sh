@@ -6,7 +6,7 @@ echo "|  _|  | | |___  | | |  _ <  / ___ \ |___ "
 echo "|_|   |___\____| |_| |_| \_\/_/   \_\____|"
 echo
 
-sudo pacman -Syu
+sudo pacman -Syuu
 
 if [ ! -d "~/.config/fictrac/build" ]; then
     echo
