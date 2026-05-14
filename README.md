@@ -5,11 +5,12 @@ Execute like the below.
 ```
 ## FicTrac man
 1. mkdir ~/.config/fictrac/track
-2. cd ~/.config/fictrac/track
-3. sudo vim ~/.config/fictrac/track/<yourvideoname>_config.txt
-4. Edit target your videoname (19. src_fn in the example below)
-5. ../bin/configGui <yourvideoname>_config.txt
-6. ../bin/fictrac <yourvideoname>_config.txt
+2. sudo cp ~/.config/fictrac/cfgs/<yourvideoname>_config.txt ~/.config/fictrac/track/<yourvideoname>_config.txt
+3. cd ~/.config/fictrac/track
+4. sudo vim ~/.config/fictrac/track/<yourvideoname>_config.txt
+5. Edit target your videoname (19. src_fn in the example below)
+6. ../bin/configGui <yourvideoname>_config.txt
+7. ../bin/fictrac <yourvideoname>_config.txt
 
 
 (One example of config.txt which makes ../bin/configGui and ../bin/fictrac work)
