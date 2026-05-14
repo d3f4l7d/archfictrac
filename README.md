@@ -8,8 +8,8 @@ Execute like the below.
 2. cd ~/.config/fictrac/track
 3. sudo vim ~/.config/fictrac/track/<yourvideoname>_config.txt
 4. Edit target your videoname (19. src_fn in the example below)
-5. ../bin/configGui config.txt
-6. ../bin/fictrac config.txt
+5. ../bin/configGui <yourvideoname>_config.txt
+6. ../bin/fictrac <yourvideoname>_config.txt
 
 
 (One example of config.txt which makes ../bin/configGui and ../bin/fictrac work)
@@ -33,7 +33,7 @@ Execute like the below.
 16. roi_r            : 0.315233
 17. save_debug       : y
 18. save_raw         : n
-19. src_fn           : front_WT42134850050020101.mp4
+19. src_fn           : <yourvideoname>.mp4
 20. src_fps          : -1.000000
 21. thr_ratio        : 1.25
 22. thr_win_pc       : 0.25
