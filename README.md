@@ -20,6 +20,9 @@ Execute like the below.
 > Following init vals are automatically aligned by FicTrac like the below.
 > So you don't need to align them.
 
+> [!WARNING]
+> Color and pattern of your treadmill ball is everthing. In case you need to change the vals such as thr_ratio, thr_win_pc, you will probably fail to gain non-noize data!!!
+
 0. FicTrac v2.1.2 config file (build date Nov  5 2025)
 1. c2a_cnrs_yz      : { 720, 520, 720, 520 }
 2. c2a_r            : { 1.084020, -1.083270, -1.285857 }
