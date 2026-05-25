@@ -7,15 +7,15 @@ Execute like the below.
 ### Recommended Procedure
 1. ```mkdir ~/.config/fictrac/cfgdir```
 2. ```mkdir ~/.config/fictrac/cfghaven```
-3. ```sudo vim ~/.config/fictrac/cfghaven/yourvideoname_config.txt```
+3. ```sudo vim ~/.config/fictrac/cfghaven/config_yourvideoname.txt```
 4. (make config.txt like the example below)
-5. ```sudo cp ~/.config/fictrac/cfghaven/yourvideoname_config.txt ~/.config/fictrac/cfgdir/yourvideoname_config.txt```
+5. ```sudo cp ~/.config/fictrac/cfghaven/config_yourvideoname.txt ~/.config/fictrac/cfgdir/config_yourvideoname.txt```
 6. ```cd ~/.config/fictrac/cfgdir```
-9. ```../bin/configGui yourvideoname_config.txt```
-10. ```../bin/fictrac yourvideoname_config.txt```
+9. ```../bin/configGui config_yourvideoname.txt```
+10. ```../bin/fictrac config_yourvideoname.txt```
 
 
-(One example of ```yourvideoname_config.txt``` which makes ../bin/configGui and ../bin/fictrac work)
+(One example of ```config_yourvideoname.txt``` which makes ../bin/configGui and ../bin/fictrac work)
 > [!TIP]
 > Following init vals are automatically aligned by FicTrac like the below.
 > So you don't need to align them.
