@@ -4,16 +4,21 @@ Execute like the below.
 ./fictracinstall.sh
 ```
 ## FicTrac man
-1. mkdir ~/.config/fictrac/track
-2. sudo cp ~/.config/fictrac/cfgs/yourvideoname_config.txt ~/.config/fictrac/track/yourvideoname_config.txt
-3. cd ~/.config/fictrac/track
-4. sudo vim ~/.config/fictrac/track/yourvideoname_config.txt
-5. Edit target your videoname (19. src_fn in the example below)
-6. ../bin/configGui yourvideoname_config.txt
-7. ../bin/fictrac yourvideoname_config.txt
+### Recommended Procedure
+1. ```mkdir ~/.config/fictrac/cfgdir```
+2. ```mkdir ~/.config/fictrac/cfghaven```
+3. ```sudo vim ~/.config/fictrac/cfghaven/yourvideoname_config.txt```
+4. (make config.txt like the example below)
+5. ```sudo cp ~/.config/fictrac/cfghaven/yourvideoname_config.txt ~/.config/fictrac/cfgdir/yourvideoname_config.txt```
+6. ```cd ~/.config/fictrac/cfgdir```
+9. ```../bin/configGui yourvideoname_config.txt```
+10. ```../bin/fictrac yourvideoname_config.txt```
 
 
-(One example of config.txt which makes ../bin/configGui and ../bin/fictrac work)
+(One example of ```yourvideoname_config.txt``` which makes ../bin/configGui and ../bin/fictrac work)
+> [!TIP]
+> Following init vals are automatically aligned by FicTrac like the below.
+> So you don't need to align them.
 
 0. FicTrac v2.1.2 config file (build date Nov  5 2025)
 1. c2a_cnrs_yz      : { 720, 520, 720, 520 }
