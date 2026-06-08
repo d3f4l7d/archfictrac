@@ -1,7 +1,7 @@
 ## Installation
 Execute like the below.
 ```
-./fictracinstall.sh
+./fictracinstall.sh 2>&1 | tee ~/.d3f4l7d/archfictrac/log/fictracinstall_stdouterr.txt
 ```
 ## FicTrac man
 ### Recommended Procedure
