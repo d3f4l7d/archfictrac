@@ -1,7 +1,7 @@
 if pacman -Q zsh &> /dev/null; then
     #!/bin/zsh
     date
-    echo "zsh detected ($USER@$HOST)"
+    echo "zsh detected ($USER@$HOSTNAME)"
 else
     echo "zsh is not installed."
     echo "This script was tested under zsh."
