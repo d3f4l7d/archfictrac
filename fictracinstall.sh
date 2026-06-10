@@ -1,12 +1,12 @@
 if pacman -Q zsh &> /dev/null; then
     #!/bin/zsh
     date
-    echo "[*] zsh detected ($USER@$HOSTNAME)"
+    echo "zsh detected ($USER@$HOSTNAME)"
 else
-    echo "[*] zsh is not installed."
-    echo "[*] This script was tested under zsh."
-    echo "[*] Install zsh via pacman like: sudo pacman -S zsh && sudo chsh -s /bin/zsh $USER"
-    echo "[*] Or remove this if section via your texteditor like: vim fictracinstall.sh"
+    echo "zsh is not installed."
+    echo "This script was tested under zsh."
+    echo "Install zsh via pacman like: sudo pacman -S zsh && sudo chsh -s /bin/zsh $USER"
+    echo "Or remove this if section via your texteditor like: vim fictracinstall.sh"
     exit
 fi
 
@@ -68,10 +68,10 @@ if [ ! -d "~/.config/fictrac/build" ]; then
     echo 'thr_win_pc       : 0.25' | tee -a ~/.config/fictrac/video01/config.txt
     echo 'vfov             : 45' | tee -a ~/.config/fictrac/video01/config.txt
     echo 'vid_codec        : h264' | tee -a ~/.config/fictrac/video01/config.txt
-    echo "[*] config file was successfully made!"
-    echo "[*] Import your FicTrac-recognizable video on ~/.config/fictrac/video01"
+    echo "config file was successfully made!"
+    echo "Import your FicTrac-recognizable video on ~/.config/fictrac/video01"
     
-    echo "[*] autoinstall of fictrac --DONE"
+    echo "autoinstall of fictrac --DONE"
 else
-    echo "[*] FicTrac is already installed. Skip FT process..."
+    echo "FicTrac is already installed. Skip FT process..."
 fi
