@@ -3,9 +3,9 @@ Execute like the below.
 ```
 ./fictracinstall.sh 2>&1 | tee fictracinstall_stdouterr.txt
 ```
-## FicTrac man
+## Usage of FicTrac v2.1.2 from this repository
 ### Recommended Procedure
-1. ```mkdir ~/.config/fictrac/cfgdir```
+1. ```mkdir ~/.config/fictrac/config```
 2. ```mkdir ~/.config/fictrac/cfghaven```
 3. ```sudo vim ~/.config/fictrac/cfghaven/config_yourvideoname.txt```
 4. (make config.txt like the example below)
