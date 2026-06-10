@@ -5,8 +5,8 @@ Execute like the below.
 ```
 ## Usage of FicTrac v2.1.2 from this repository
 ### Recommended Procedure
-1. ```mkdir ~/.config/fictrac/config```
-2. ```mkdir ~/.config/fictrac/cfghaven```
+1. ```mkdir ~/.config/fictrac/video``` and copy your FicTrac-recognizable video to this directory.
+2. ```sudo vim ~/.config/fictrac/video/config.txt```
 3. ```sudo vim ~/.config/fictrac/cfghaven/config_yourvideoname.txt```
 4. (make config.txt like the example below)
 5. ```sudo cp ~/.config/fictrac/cfghaven/config_yourvideoname.txt ~/.config/fictrac/cfgdir/config_yourvideoname.txt```
