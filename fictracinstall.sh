@@ -41,6 +41,9 @@ if [ ! -d "~/.config/fictrac/build" ]; then
     cmake --build . --config Release --parallel $(nproc) --clean-first
     echo '# Add FicTrac to PATH. Check PATH via echo $PATH' | tee -a ~/.zshrc
     echo 'export PATH="$PATH:$HOME/.config/fictrac/bin"' | tee -a ~/.zshrc
+    mkdir ~/.config/fictrac/video01
+    cd ~/.config/fictrac/video01
+    
     echo "autoinstall of fictrac --DONE"
 else
     echo "FicTrac is already installed. Skip FT process..."
