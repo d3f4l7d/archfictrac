@@ -43,7 +43,7 @@ if [ ! -d "~/.config/fictrac/build" ]; then
     echo 'export PATH="$PATH:$HOME/.config/fictrac/bin"' | tee -a ~/.zshrc
     mkdir ~/.config/fictrac/video01
     cd ~/.config/fictrac/video01
-    sudo touch ~/.config/fictrac/video01/config.txt
+    touch ~/.config/fictrac/video01/config.txt
     echo 'c2a_cnrs_yz      : { 720, 520, 720, 520 }' | tee -a ~/.config/fictrac/video01/config.txt
     echo 'c2a_r            : { 1.084020, -1.083270, -1.285857 }' | tee -a ~/.config/fictrac/video01/config.txt
     echo 'c2a_src          : c2a_cnrs_yz' | tee -a ~/.config/fictrac/video01/config.txt
