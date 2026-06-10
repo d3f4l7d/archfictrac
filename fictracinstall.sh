@@ -39,6 +39,8 @@ if [ ! -d "~/.config/fictrac/build" ]; then
     cp ~/.config/d3f4l7d/archfictrac/SocketRecorder.cpp ~/.config/fictrac/src/SocketRecorder.cpp
     cp ~/.config/d3f4l7d/archfictrac/SerialRecorder.cpp ~/.config/fictrac/src/SerialRecorder.cpp
     cmake --build . --config Release --parallel $(nproc) --clean-first
+    echo '# Add FicTrac to PATH. Check PATH via echo $PATH' | tee -a ~/.zshrc
+    echo 'export PATH="$PATH:$HOME/.config/fictrac/bin"' | tee -a ~/.zshrc
     echo "autoinstall of fictrac --DONE"
 else
     echo "FicTrac is already installed. Skip FT process..."
