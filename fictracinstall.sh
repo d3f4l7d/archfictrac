@@ -44,7 +44,30 @@ if [ ! -d "~/.config/fictrac/build" ]; then
     mkdir ~/.config/fictrac/video01
     cd ~/.config/fictrac/video01
     sudo touch ~/.config/fictrac/video01/config.txt
-    
+    echo 'c2a_cnrs_yz      : { 720, 520, 720, 520 }' | tee -a ~/.config/fictrac/video01/config.txt
+    echo 'c2a_r            : { 1.084020, -1.083270, -1.285857 }' | tee -a ~/.config/fictrac/video01/config.txt
+    echo 'c2a_src          : c2a_cnrs_yz' | tee -a ~/.config/fictrac/video01/config.txt
+    echo 'c2a_t            : { -0.000921, 0.038328, 1.024834 }' | tee -a ~/.config/fictrac/video01/config.txt
+    echo 'do_display       : y' | tee -a ~/.config/fictrac/video01/config.txt
+    echo 'max_bad_frames   : -1' | tee -a ~/.config/fictrac/video01/config.txt
+    echo 'opt_bound        : 0.35' | tee -a ~/.config/fictrac/video01/config.txt
+    echo 'opt_do_global    : n' | tee -a ~/.config/fictrac/video01/config.txt
+    echo 'opt_max_err      : -1.000000' | tee -a ~/.config/fictrac/video01/config.txt
+    echo 'opt_max_evals    : 50' | tee -a ~/.config/fictrac/video01/config.txt
+    echo 'opt_tol          : 0.001' | tee -a ~/.config/fictrac/video01/config.txt
+    echo 'q_factor         : 6' | tee -a ~/.config/fictrac/video01/config.txt
+    echo 'roi_c            : { -0.007921, 0.207410, 0.978222 }' | tee -a ~/.config/fictrac/video01/config.txt
+    echo 'roi_c            : { 0.017761, 0.238081, 0.971083 }' | tee -a ~/.config/fictrac/video01/config.txt
+    echo 'roi_circ         : { 365, 248, 540, 359, 207, 358, 215, 524, 527, 526 }' | tee -a ~/.config/fictrac/video01/config.txt
+    echo 'roi_ignr         : { { 0, 280, 0, 0, 720, 0, 720, 280 } }' | tee -a ~/.config/fictrac/video01/config.txt
+    echo 'save_debug       : y' | tee -a ~/.config/fictrac/video01/config.txt
+    echo 'save_raw         : n' | tee -a ~/.config/fictrac/video01/config.txt
+    echo 'src_fn           : yourvideoname.mp4' | tee -a ~/.config/fictrac/video01/config.txt
+    echo 'src_fps          : 500' | tee -a ~/.config/fictrac/video01/config.txt
+    echo 'thr_ratio        : 1.25' | tee -a ~/.config/fictrac/video01/config.txt
+    echo 'thr_win_pc       : 0.25' | tee -a ~/.config/fictrac/video01/config.txt
+    echo 'vfov             : 45' | tee -a ~/.config/fictrac/video01/config.txt
+    echo 'vid_codec        : h264' | tee -a ~/.config/fictrac/video01/config.txt
     
     echo "autoinstall of fictrac --DONE"
 else
