@@ -1,5 +1,6 @@
 # Intro for original FicTrac
-![Original FicTrac img]([https://github.com/d3f4l7d/archfictrac/blob/main/img/110451048-176e9300-80c4-11eb-8e1e-e96545d7d2ed.jpg])
+<img width="1024" height="272" alt="110451048-176e9300-80c4-11eb-8e1e-e96545d7d2ed" src="https://github.com/user-attachments/assets/7b3c710c-dc94-4648-9daf-6b8afd5a15d4" />
+
 ## Installation
 Execute like the below.
 ```
