@@ -1,6 +1,8 @@
 # Intro for original FicTrac
 <img width="1024" height="272" alt="110451048-176e9300-80c4-11eb-8e1e-e96545d7d2ed" src="https://github.com/user-attachments/assets/7b3c710c-dc94-4648-9daf-6b8afd5a15d4" />
 
+this paper(https://pdf.sciencedirectassets.com/271055/1-s2.0-S0165027014X00026/1-s2.0-S0165027014000211/dx.doi.org/10.1016/j.jneumeth.2014.01.010)
+
 ## Installation
 Execute like the below.
 ```
