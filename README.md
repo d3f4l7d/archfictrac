@@ -1,5 +1,5 @@
 # Intro for original FicTrac
-![Original FicTrac img](https://github.com/d3fl7d/archfictrac/img/110451048-176e9300-80c4-11eb-8e1e-e96545d7d2ed.jpg)
+![Original FicTrac img]([https://github.com/d3f4l7d/archfictrac/blob/main/img/110451048-176e9300-80c4-11eb-8e1e-e96545d7d2ed.jpg])
 ## Installation
 Execute like the below.
 ```
