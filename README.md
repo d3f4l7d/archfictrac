@@ -12,9 +12,9 @@ Execute like the below.
 
 
 ## Usage of FicTrac v2.1.2 from this repository
-Go video directory.
+Go video directory (Anywhere is fine for this repo's FicTrac). For example...
 ```
-cd ~/.config/fictrac/video01
+cd ~/Downloads/video/
 ```
 Then, execute fictrac
 ```
