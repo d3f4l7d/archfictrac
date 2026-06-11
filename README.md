@@ -12,11 +12,18 @@ Execute like the below.
 
 
 ## Usage of FicTrac v2.1.2 from this repository
+
 Go video directory (Anywhere is fine for this repo's FicTrac). For example...
 ```
 cd ~/Downloads/video/
 ```
-Then, execute fictrac
+
+Configure your video.
+```
+configGui config.txt
+```
+
+Then, execute fictrac.
 ```
 fictrac config.txt
 ```
