@@ -46,7 +46,7 @@ This was originally from [data_header.txt](https://github.com/rjdmoore/fictrac/b
 |   5   | delta rotation error score      | Error score associated with rotation estimate. |
 |  6-8  | delta rotation vector (lab)     |  Change in orientation since last frame, represented as rotation angle/axis (radians) in laboratory coordinates (see *configImg.jpg). |
 |  9-11 | absolute rotation vector (cam)  | Absolute orientation of the sphere represented as rotation angle/axis (radians) in camera coordinates. |
-| 12-14 | absolute rotation vector (lab)  | Absolute orientation of the sphere represented as rotation angle/axis (radians) in 
+| 12-14 | absolute rotation vector (lab)  | Absolute orientation of the sphere represented as rotation angle/axis (radians) in laboratory coordinates. |
 | 15-16 | integrated x/y position (lab)   | Integrated x/y position (radians) in laboratory coordinates. Scale by sphere radius for true position. |
 |  17   | integrated animal heading (lab) | Integrated heading orientation (radians) of the animal in laboratory coordinates. This is the direction the animal is facing. |
 |  18   | animal movement direction (lab) | Instantaneous running direction (radians) of the animal in laboratory coordinates. This is the direction the animal is moving in the lab frame (add to animal heading to get direction in world). |
