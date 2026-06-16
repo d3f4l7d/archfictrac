@@ -51,7 +51,7 @@ This was originally from [data_header.txt](https://github.com/rjdmoore/fictrac/b
 |  17   | integrated animal heading (lab) | Integrated heading orientation (radians) of the animal in laboratory coordinates. This is the direction the animal is facing. |
 |  18   | animal movement direction (lab) | Instantaneous running direction (radians) of the animal in laboratory coordinates. This is the direction the animal is moving in the lab frame (add to animal heading to get direction in world). |
 |  19   | animal movement speed           | Instantaneous running speed (radians/frame) of the animal. Scale by sphere radius for true speed. |
-| 20-21 | integrated forward/side motion  | Integrated x/y position (radians) of the sphere in laboratory coordinates neglecting 
+| 20-21 | integrated forward/side motion  | Integrated x/y position (radians) of the sphere in laboratory coordinates neglecting heading. Equivalent to the output from two optic mice. |
 |  22   | timestamp                       | Either position in video file (ms) or frame capture time (ms since epoch). |
 |  23   | sequence counter                | Position in current frame sequence. Usually corresponds directly to frame counter, but can reset to 1 if tracking is reset. |
 |  24   | delta timestamp                 | Time (ms) since last frame. |
