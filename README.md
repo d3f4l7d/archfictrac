@@ -44,7 +44,7 @@ This was originally from [data_header.txt](https://github.com/rjdmoore/fictrac/b
 |   1   | frame counter                   | Corresponding video frame (starts at #1). | 
 |  2-4  | delta rotation vector (cam)     | Change in orientation since last frame, represented as rotation angle/axis (radians) in camera coordinates (x right, y down, z forward). | Probably useful for validation after plotting. |
 |   5   | delta rotation error score      | Error score associated with rotation estimate. |
-|  6-8  | delta rotation vector (lab)     |  Change in orientation since last frame, represented as rotation angle/axis (radians) in laboratory coordinates (see *configImg.jpg). |
+|  6-8  | delta rotation vector (lab)     |  Change in orientation since last frame, represented as rotation angle/axis (radians) in laboratory coordinates (see *configImg.jpg). | This can be the main part of your analysis. 6 -> ψ (rotation around X; yaw), 7 -> θ (rotation around Y; pitch), 8 -> φ (rotation around Z; roll)|
 |  9-11 | absolute rotation vector (cam)  | Absolute orientation of the sphere represented as rotation angle/axis (radians) in camera coordinates. |
 | 12-14 | absolute rotation vector (lab)  | Absolute orientation of the sphere represented as rotation angle/axis (radians) in laboratory coordinates. |
 | 15-16 | integrated x/y position (lab)   | Integrated x/y position (radians) in laboratory coordinates. Scale by sphere radius for true position. |
