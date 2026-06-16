@@ -36,5 +36,55 @@ fictrac config.txt
 > Color of your treadmill ball is everthing. In case you need to change the vals such as thr_ratio, thr_win_pc, you will probably fail to optimize and gain noize-free data. Change hard side, not soft side. Remenber, the example config vals in my code are almost using default vals.
 
 
+# Output Data Structure
+This was originally from [data_header.txt](https://github.com/rjdmoore/fictrac/blob/master/doc/data_header.txt) on the original FicTrac repository.
+
+|  COL  | PARAMETER                       | DESCRIPTION |
+| ----- | ------------------------------- | ----------- |
+|   1   | frame counter                   | Corresponding video frame (starts at #1). |
+|  2-4  | delta rotation vector (cam)     | Change in orientation since last frame,
+                                            represented as rotation angle/axis (radians)
+                                            in camera coordinates (x right, y down, z
+                                            forward). |
+    5       delta rotation error score      Error score associated with rotation
+                                            estimate.
+    6-8     delta rotation vector (lab)     Change in orientation since last frame,
+                                            represented as rotation angle/axis (radians)
+                                            in laboratory coordinates (see
+                                            *configImg.jpg).
+    9-11    absolute rotation vector (cam)  Absolute orientation of the sphere
+                                            represented as rotation angle/axis (radians)
+                                            in camera coordinates.
+    12-14   absolute rotation vector (lab)  Absolute orientation of the sphere
+                                            represented as rotation angle/axis (radians)
+                                            in laboratory coordinates.
+    15-16   integrated x/y position (lab)   Integrated x/y position (radians) in
+                                            laboratory coordinates. Scale by sphere
+                                            radius for true position.
+    17      integrated animal heading (lab) Integrated heading orientation (radians) of
+                                            the animal in laboratory coordinates. This
+                                            is the direction the animal is facing.
+    18      animal movement direction (lab) Instantaneous running direction (radians) of
+                                            the animal in laboratory coordinates. This is
+                                            the direction the animal is moving in the lab
+                                            frame (add to animal heading to get direction
+                                            in world).
+    19      animal movement speed           Instantaneous running speed (radians/frame)
+                                            of the animal. Scale by sphere radius for
+                                            true speed.
+    20-21   integrated forward/side motion  Integrated x/y position (radians) of the
+                                            sphere in laboratory coordinates neglecting
+                                            heading. Equivalent to the output from two
+                                            optic mice.
+    22      timestamp                       Either position in video file (ms) or frame
+                                            capture time (ms since epoch).
+    23      sequence counter                Position in current frame sequence. Usually
+                                            corresponds directly to frame counter, but
+                                            can reset to 1 if tracking is reset.
+    24      delta timestamp                 Time (ms) since last frame.
+    25      alt. timestamp                  Frame capture time (ms since midnight).
+
+
+
 ## License
 MIT License - see [LICENSE](/LICENSE) for more details.
