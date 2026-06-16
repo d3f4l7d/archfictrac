@@ -48,7 +48,7 @@ This was originally from [data_header.txt](https://github.com/rjdmoore/fictrac/b
 |  9-11 | absolute rotation vector (cam)  | Absolute orientation of the sphere represented as rotation angle/axis (radians) in camera coordinates. |
 | 12-14 | absolute rotation vector (lab)  | Absolute orientation of the sphere represented as rotation angle/axis (radians) in laboratory coordinates. |
 | 15-16 | integrated x/y position (lab)   | Integrated x/y position (radians) in laboratory coordinates. Scale by sphere radius for true position. | Not neglecting heading. |
-|  17   | integrated animal heading (lab) | Integrated heading orientation (radians) of the animal in laboratory coordinates. This is the direction the animal is facing. | heading direction. |
+|  17   | integrated animal heading (lab) | Integrated heading orientation (radians) of the animal in laboratory coordinates. This is the direction the animal is facing. | Heading direction! |
 |  18   | animal movement direction (lab) | Instantaneous running direction (radians) of the animal in laboratory coordinates. This is the direction the animal is moving in the lab frame (add to animal heading to get direction in world). |
 |  19   | animal movement speed           | Instantaneous running speed (radians/frame) of the animal. Scale by sphere radius for true speed. |
 | 20-21 | integrated forward/side motion  | Integrated x/y position (radians) of the sphere in laboratory coordinates neglecting heading. Equivalent to the output from two optic mice. | Neglecting heading. |
