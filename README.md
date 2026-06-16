@@ -39,10 +39,10 @@ fictrac config.txt
 # Output Data Structure
 This was originally from [data_header.txt](https://github.com/rjdmoore/fictrac/blob/master/doc/data_header.txt) on the original FicTrac repository.
 
-|  COL  | PARAMETER                       | DESCRIPTION |
-| ----- | ------------------------------- | ----------- |
-|   1   | frame counter                   | Corresponding video frame (starts at #1). |
-|  2-4  | delta rotation vector (cam)     | Change in orientation since last frame, represented as rotation angle/axis (radians) in camera coordinates (x right, y down, z forward). |           
+|  COL  | PARAMETER                       | ORIGINAL DESCRIPTION | D3F4L7'S TIP |
+| ----- | ------------------------------- | ----------- | ----------- |
+|   1   | frame counter                   | Corresponding video frame (starts at #1). | 
+|  2-4  | delta rotation vector (cam)     | Change in orientation since last frame, represented as rotation angle/axis (radians) in camera coordinates (x right, y down, z forward). | Probably useful for validation after plotting. |
 |   5   | delta rotation error score      | Error score associated with rotation estimate. |
 |  6-8  | delta rotation vector (lab)     |  Change in orientation since last frame, represented as rotation angle/axis (radians) in laboratory coordinates (see *configImg.jpg). |
 |  9-11 | absolute rotation vector (cam)  | Absolute orientation of the sphere represented as rotation angle/axis (radians) in camera coordinates. |
