@@ -44,14 +44,14 @@ This was originally from [data_header.txt](https://github.com/rjdmoore/fictrac/b
 |   1   | frame counter                   | Corresponding video frame (starts at #1). | 
 |  2-4  | delta rotation vector (cam)     | Change in orientation since last frame, represented as rotation angle/axis (radians) in camera coordinates (x right, y down, z forward). | Probably useful for validation after plotting. |
 |   5   | delta rotation error score      | Error score associated with rotation estimate. |
-|  6-8  | delta rotation vector (lab)     |  Change in orientation since last frame, represented as rotation angle/axis (radians) in laboratory coordinates (see *configImg.jpg). | This can be the main part of your analysis. 6 corresponds to ψ (rotation around X; roll), 7 corresponds to θ (rotation around Y; pitch), 8 corresponds to φ (rotation around Z; yaw)|
+|  6-8  | delta rotation vector (lab)     |  Change in orientation since last frame, represented as rotation angle/axis (radians) in laboratory coordinates (see *configImg.jpg). | This can be the main part of your analysis. 6 corresponds to ψ (rotation around X; roll), 7 corresponds to θ (rotation around Y; pitch), 8 corresponds to φ (rotation around Z; yaw).|
 |  9-11 | absolute rotation vector (cam)  | Absolute orientation of the sphere represented as rotation angle/axis (radians) in camera coordinates. |
 | 12-14 | absolute rotation vector (lab)  | Absolute orientation of the sphere represented as rotation angle/axis (radians) in laboratory coordinates. |
 | 15-16 | integrated x/y position (lab)   | Integrated x/y position (radians) in laboratory coordinates. Scale by sphere radius for true position. | Not neglecting heading. |
 |  17   | integrated animal heading (lab) | Integrated heading orientation (radians) of the animal in laboratory coordinates. This is the direction the animal is facing. | Heading direction! |
 |  18   | animal movement direction (lab) | Instantaneous running direction (radians) of the animal in laboratory coordinates. This is the direction the animal is moving in the lab frame (add to animal heading to get direction in world). |
 |  19   | animal movement speed           | Instantaneous running speed (radians/frame) of the animal. Scale by sphere radius for true speed. |
-| 20-21 | integrated forward/side motion  | Integrated x/y position (radians) of the sphere in laboratory coordinates neglecting heading. Equivalent to the output from two optic mice. | Neglecting heading. |
+| 20-21 | integrated forward/side motion  | Integrated x/y position (radians) of the sphere in laboratory coordinates neglecting heading. Equivalent to the output from two optic mice. | 20 corresponds to integrated rolling motion, 21 corresponds to integrated pitching motion, but those are neglecting heading (|r|).|
 |  22   | timestamp                       | Either position in video file (ms) or frame capture time (ms since epoch). |
 |  23   | sequence counter                | Position in current frame sequence. Usually corresponds directly to frame counter, but can reset to 1 if tracking is reset. |
 |  24   | delta timestamp                 | Time (ms) since last frame. |
