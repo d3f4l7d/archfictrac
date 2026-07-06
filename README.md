@@ -1,6 +1,6 @@
 # For Users Of This Repository
 
-## Added Patch Info (07.06.2026 Updated)
+## Added Patch Info (Jul 06 2026 Updated)
 
 | Added Date | Patched filename | Description |
 | ---------- | ---------------- | ----------- |
