@@ -1,3 +1,13 @@
+# For Users Of This Repository
+
+
+
+## Added Patch Info (07.06.2026 Updated)
+
+| Added Date | Patched filename | Description |
+| ---------- | ---------------- | ----------- |
+| 07.06.2026 | calib.hpp        | There is a conflict between cv::CameraModel and rjdmoore's CameraModel. I solved this issue by just renaming cv::CameraModel from CameraModel to CVCameraModel in calib.hpp (In my local env, the path is '/usr/include/opencv5/opencv2/calib.hpp'). |
+
 # Introduction
 
 <img width="1024" height="272" alt="110451048-176e9300-80c4-11eb-8e1e-e96545d7d2ed" src="https://github.com/user-attachments/assets/7b3c710c-dc94-4648-9daf-6b8afd5a15d4" />
