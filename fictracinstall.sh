@@ -35,9 +35,9 @@ if [ ! -d "~/.config/fictrac/build" ]; then
     mkdir ~/.config/fictrac/build
     cd ~/.config/fictrac/build
     cmake ..
-    cp ~/.config/d3f4l7d/archfictrac/SocketRecorder.h ~/.config/fictrac/include/SocketRecorder.h
-    cp ~/.config/d3f4l7d/archfictrac/SocketRecorder.cpp ~/.config/fictrac/src/SocketRecorder.cpp
-    cp ~/.config/d3f4l7d/archfictrac/SerialRecorder.cpp ~/.config/fictrac/src/SerialRecorder.cpp
+    cp -v ~/.config/d3f4l7d/archfictrac/SocketRecorder.h ~/.config/fictrac/include/SocketRecorder.h
+    cp -v ~/.config/d3f4l7d/archfictrac/SocketRecorder.cpp ~/.config/fictrac/src/SocketRecorder.cpp
+    cp -v ~/.config/d3f4l7d/archfictrac/SerialRecorder.cpp ~/.config/fictrac/src/SerialRecorder.cpp
     sudo cp -v ~/.config/d3f4l7d/archfictrac/calib.hpp /usr/include/opencv5/opencv2/calib.hpp
     cmake --build . --config Release --parallel $(nproc) --clean-first
     echo '# Add FicTrac to PATH. Check PATH via echo $PATH' | tee -a ~/.zshrc
